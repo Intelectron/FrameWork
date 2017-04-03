@@ -1,0 +1,31 @@
+infineo.name=Infineo IO
+infineo.vid.0=0x1209
+infineo.pid.0=0x9999
+
+infineo.build.core=arduino
+infineo.build.variant=micro
+infineo.build.mcu=atmega32u4
+infineo.build.f_cpu=16000000L
+infineo.build.board=AVR_MICRO
+infineo.vid.0.build.vid=0x1209
+infineo.pid.0.build.pid=0x9999
+infineo.build.usb_product="Infineo"
+infineo.build.extra_flags={build.usb_flags}
+infineo.build.usb_manufacturer="Intelectron India"
+
+infineo.upload.protocol=avr109
+infineo.upload.maximum_size=28672
+infineo.upload.speed=57600
+infineo.upload.disable_flushing=true
+infineo.upload.use_1200bps_touch=true
+infineo.upload.wait_for_upload_port=true
+infineo.upload.tool=avrdude
+
+infineo.bootloader.tool=avrdude
+infineo.bootloader.low_fuses=0xff
+infineo.bootloader.high_fuses=0xd8
+infineo.bootloader.extended_fuses=0xcb
+infineo.bootloader.path=build
+infineo.bootloader.file=build/infineo.hex
+infineo.bootloader.unlock_bits=0x3F
+infineo.bootloader.lock_bits=0x2F
